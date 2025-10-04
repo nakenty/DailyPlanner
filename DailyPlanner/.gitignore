@@ -1,0 +1,19 @@
+# Ignore build artifacts and user‑specific files
+bin/
+obj/
+.vscode/
+.idea/
+**/*.user
+**/*.suo
+**/*.userosscache
+**/*.userprefs
+node_modules/
+dist/
+ClientApp/dist/
+ClientApp/node_modules/
+wwwroot/lib/
+*.pdb
+*.cache
+*.log
+**/*.db
+**/*.sqlite
