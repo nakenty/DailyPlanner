@@ -22,3 +22,42 @@ The following controllers are defined in the Web UI project:
 These endpoints operate on simple in‑memory collections by default.  You can replace the in‑memory services in `Program.cs` with real implementations (e.g. connecting to OneDrive or a database) when you’re ready.
 
 With this structure in place you can begin adding business logic, integrate authentication, and scaffold the Angular front‑end.  See the `Program.cs` and `TasksController` for examples of how to wire up services and expose endpoints.
+## Getting Started
+
+### Prerequisites
+- .NET 8.0 SDK
+- Your favorite IDE (Visual Studio, VS Code, Rider)
+
+### Running the API
+
+1. Build the solution:
+   ```bash
+   dotnet build
+   ```
+
+2. Run tests:
+   ```bash
+   dotnet test
+   ```
+
+3. Start the API:
+   ```bash
+   cd WebUI
+   dotnet run
+   ```
+
+4. Access Swagger UI (in Development mode):
+   - Navigate to `http://localhost:5000/swagger`
+   - Explore and test all API endpoints interactively
+
+### What's Next?
+
+This project has completed its initial scaffolding phase with all core features implemented and tested. For the complete roadmap and next development steps, see **[ROADMAP.md](ROADMAP.md)**.
+
+**Immediate next steps:**
+1. Implement persistent storage (replace in-memory services)
+2. Add authentication and authorization
+3. Build the Angular front-end
+4. Deploy to production environment
+
+See [ROADMAP.md](ROADMAP.md) for detailed implementation plans, priorities, and technical decisions.
